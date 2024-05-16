@@ -1,0 +1,37 @@
+#downLoad {
+    padding: 50px 0;
+  .downLoad {
+    h1 {
+      font-size: 65px;
+      color: rgba(2, 6, 29, 1);
+      text-align: center;
+      margin: 0px 0 40px 0;
+      font-weight: 600;
+    }
+    &--details {
+      details {
+        background: rgba(231, 231, 231, 1);
+        margin: 20px 0;
+        padding: 10px 20px;
+        border-radius: 15px;
+        summary {
+          list-style: none;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding: 10px 15px;
+          font-size: 20px;
+          font-weight: 600;
+        }
+        summary::after {
+          content: "";
+          width: 46px;
+          height: 46px;
+          background: url("../img//plus.png") no-repeat;
+          background-size: cover;
+          transition: 0.2s;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,43 @@
+#questions {
+  padding: 90px 0;
+  .questions {
+    display: flex;
+    justify-content: space-between;
+    width: 96%;
+    margin: 0 auto;
+    height: 370px;
+    background: white;
+    border-radius: 30px;
+    &--text {
+      padding: 48px 61px;
+      p {
+        font-size: 45px;
+        width: 509px;
+        font-weight: 600;
+        line-height: 49.5px;
+        margin-bottom: 16px;
+      }
+      &__btns {
+        padding: 20px;
+        display: flex;
+        gap: 10px;
+      }
+    }
+    &--images {
+      position: relative;
+      img {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        &:first-child {
+          z-index: 99;
+          top: -55px;
+        }
+        &:last-child {
+          top: -55px;
+        }
+      }
+    }
+  }
+}
